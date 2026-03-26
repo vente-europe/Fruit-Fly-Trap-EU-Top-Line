@@ -48,11 +48,11 @@ td.num{text-align:right;font-variant-numeric:tabular-nums}
   <!-- KPI Row -->
   <div class="kpi-row">
     <div class="kpi">
-      <div class="kpi-v">&euro;21.3M</div>
+      <div class="kpi-v">&euro;24.9M</div>
       <div class="kpi-l">Total 12M Revenue (all segments)</div>
     </div>
     <div class="kpi">
-      <div class="kpi-v">2,347,212</div>
+      <div class="kpi-v">2,884,917</div>
       <div class="kpi-l">Total 12M Units Sold (all segments)</div>
     </div>
     <div class="kpi">
@@ -96,16 +96,16 @@ td.num{text-align:right;font-variant-numeric:tabular-nums}
           <td class="num">21×</td>
           <td class="num">1,291,647</td>
           <td class="num">&euro;11,124,230</td>
-          <td class="num">55.0%</td>
+          <td class="num">44.7%</td>
         </tr>
         <tr>
           <td><span class="dot" style="background:#dc2626"></span>🇬🇧 United Kingdom (UK)</td>
           <td>GBP → EUR</td>
-          <td class="num">34,496</td>
+          <td class="num">60,101</td>
           <td class="num">21×</td>
-          <td class="num">724,416</td>
-          <td class="num">&euro;6,821,119</td>
-          <td class="num">30.9%</td>
+          <td class="num">1,262,121</td>
+          <td class="num">&euro;10,405,036</td>
+          <td class="num">41.8%</td>
         </tr>
         <tr>
           <td><span class="dot" style="background:#0891b2"></span>🇫🇷 France (FR)</td>
@@ -114,7 +114,7 @@ td.num{text-align:right;font-variant-numeric:tabular-nums}
           <td class="num">21×</td>
           <td class="num">182,007</td>
           <td class="num">&euro;1,910,862</td>
-          <td class="num">7.8%</td>
+          <td class="num">7.7%</td>
         </tr>
         <tr>
           <td><span class="dot" style="background:#7c3aed"></span>🇮🇹 Italy (IT)</td>
@@ -123,7 +123,7 @@ td.num{text-align:right;font-variant-numeric:tabular-nums}
           <td class="num">21×</td>
           <td class="num">85,848</td>
           <td class="num">&euro;813,538</td>
-          <td class="num">3.7%</td>
+          <td class="num">3.3%</td>
         </tr>
         <tr>
           <td><span class="dot" style="background:#d97706"></span>🇪🇸 Spain (ES)</td>
@@ -132,7 +132,7 @@ td.num{text-align:right;font-variant-numeric:tabular-nums}
           <td class="num">21×</td>
           <td class="num">59,535</td>
           <td class="num">&euro;568,446</td>
-          <td class="num">2.5%</td>
+          <td class="num">2.3%</td>
         </tr>
         <tr>
           <td><span class="dot" style="background:#ea580c"></span>🇳🇱 Netherlands (NL)</td>
@@ -141,14 +141,14 @@ td.num{text-align:right;font-variant-numeric:tabular-nums}
           <td class="num">21×</td>
           <td class="num">3,759</td>
           <td class="num">&euro;81,631</td>
-          <td class="num">0.2%</td>
+          <td class="num">0.3%</td>
         </tr>
         <tr class="total-row">
           <td colspan="2"><strong>Total</strong></td>
-          <td class="num">111,772</td>
+          <td class="num">137,377</td>
           <td class="num">—</td>
-          <td class="num">2,347,212</td>
-          <td class="num">&euro;21,319,826</td>
+          <td class="num">2,884,917</td>
+          <td class="num">&euro;24,903,743</td>
           <td class="num">100%</td>
         </tr>
       </tbody>
@@ -244,8 +244,8 @@ td.num{text-align:right;font-variant-numeric:tabular-nums}
 Chart.register(ChartDataLabels);
 
 const LABELS = ['DE','UK','FR','IT','ES','NL'];
-const REVENUE = [11124230, 6821119, 1910862, 813538, 568446, 81631];
-const UNITS   = [1291647, 724416, 182007, 85848, 59535, 3759];
+const REVENUE = [11124230, 10405036, 1910862, 813538, 568446, 81631];
+const UNITS   = [1291647, 1262121, 182007, 85848, 59535, 3759];
 const COLORS  = ['#2563eb','#dc2626','#0891b2','#7c3aed','#d97706','#ea580c'];
 
 // Bar chart
@@ -370,7 +370,7 @@ new Chart(document.getElementById('pieChart'), {
 // === Heatmap tables ===
 const SEG_DATA = {
   'Lure':       { rev: [2479624, 2243209, 942938, 88252, 84886, 81631], units: [186480, 161217, 63756, 5208, 5985, 3759] },
-  'Sticky':     { rev: [7097843, 0, 933179, 252177, 593780, 0], units: [1022826, 0, 116739, 33243, 73584, 0] },
+  'Sticky':     { rev: [7097843, 3583917, 933179, 252177, 593780, 0], units: [1022826, 537705, 116739, 33243, 73584, 0] },
   'Electric':   { rev: [1220910, 314196, 34745, 107267, 79741, 0], units: [50694, 8169, 1512, 6804, 4557, 0] },
   'Fruit-Bait': { rev: [325853, 0, 0, 0, 0, 0], units: [31647, 0, 0, 0, 0, 0] },
   'Other':      { rev: [0, 4263714, 0, 120750, 55131, 0], units: [0, 555030, 0, 14280, 1722, 0] }
